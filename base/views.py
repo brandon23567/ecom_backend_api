@@ -8,14 +8,14 @@ from django.contrib.auth import authenticate
 from .models import *
 from rest_framework import status
 
-# @api_view(["GET"])
-# def index(request):
-#     return Response({ "message": "This is index page" })
+@api_view(["GET"])
+def index(request):
+    return Response({ "message": "This is index page" })
 
 
-# @api_view(["GET"])
-# def new_test_path(request):
-#     return Response({ "message": "This is a test path to see my github webhook" })
+@api_view(["GET"])
+def new_test_path(request):
+    return Response({ "message": "This is a test path to see my github webhook" })
 
 
 @api_view(["POST"])
